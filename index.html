@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Price Comparator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Price Comparison</h1>
+        <input type="text" id="productInput" placeholder="Enter product name">
+        <button onclick="comparePrices()">Compare</button>
+
+        <div id="priceCards" class="cards"></div>
+
+        <div id="priceDiffs" class="differences"></div>
+        <p id="lowestText" class="lowest"></p>
+
+        <canvas id="priceChart" style="margin-top: 20px;"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
